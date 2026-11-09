@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gurazala Harshini | Portfolio</title>
+<meta name="description" content="Portfolio of Gurazala Harshini, learning AI and programming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f6f7; --ink:#12263a; --muted:#4a5f70; --accent:#0e7c86; --pop:#f5b700; --card:#ffffff; --line:#d3dee3;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1b27; --ink:#eaf2f5; --muted:#9db3c0; --accent:#4fd1c5; --pop:#f5b700; --card:#152636; --line:#27404f; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--pop);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 6vw;border-bottom:1px solid var(--line)}
+header strong{font-weight:800}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+nav a:hover{color:var(--ink)}
+.hero{padding:9vh 6vw 7vh;max-width:900px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.5rem);line-height:1.02;margin:0 0 20px;font-weight:800;letter-spacing:-0.02em}
+.hero h1 span{display:block}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:10px}
+main section{padding:7vh 6vw;max-width:900px}
+h2{font-size:1.9rem;margin:0 0 18px;font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);padding:12px 20px;border-radius:14px;font-weight:600}
+.chips li:nth-child(1){border-left:6px solid var(--accent)}
+.chips li:nth-child(2){border-left:6px solid var(--pop)}
+.chips li:nth-child(3){border-left:6px solid var(--ink)}
+.note{color:var(--muted);max-width:36em}
+.empty{border:2px dashed var(--line);border-radius:14px;padding:24px;color:var(--muted)}
+footer{padding:30px 6vw;border-top:1px solid var(--line);color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <strong>Harshini</strong>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+  <h1><span>Gurazala</span><span>Harshini</span></h1>
+  <p>I am learning AI and programming, one small step at a time. This page grows as I learn.</p>
+  <a class="btn" href="#contact">Contact me</a>
+  <a class="btn alt" href="#skills">See what I am learning</a>
+</div>
+
+<main>
+  <section id="about">
+    <h2>About me</h2>
+    <p class="note">Hi, I am Harshini. I am a learner who enjoys technology and sports. Right now I am building my foundations in AI and programming languages, and I am learning how to turn them into real projects.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Learning AI</li>
+      <li>Learning programming languages</li>
+      <li>Sports</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="empty">My first project is coming soon. I am learning how to build projects, and I will add each one here when it is ready.</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="note">Want to say hello or share advice? Send me an email.</p>
+    <a class="btn" href="mailto:gurazalaharshini@gmail.com">gurazalaharshini@gmail.com</a>
+  </section>
+</main>
+
+<footer>&copy; 2026 Gurazala Harshini</footer>
+</body>
+</html>
